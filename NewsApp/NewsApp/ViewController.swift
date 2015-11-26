@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
@@ -71,14 +73,20 @@ class ViewController: UIViewController {
         self.view.addSubview(pageMenu!.view)
         
         pageMenu!.didMoveToParentViewController(self)
+        
+        
+        Alamofire.request(.GET, "http://qiita-stock.info/api.json").responseJSON {
+            response in
+            if response.result.isSuccess {
+                print(response)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 
 }
 

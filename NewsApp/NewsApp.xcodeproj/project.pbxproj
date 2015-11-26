@@ -15,6 +15,8 @@
 		689E1DC71BF4EB35009D5D02 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */; };
 		689E1DCE1BF4EBC1009D5D02 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DCC1BF4EBC1009D5D02 /* TableViewController.swift */; };
 		689E1DCF1BF4EBC1009D5D02 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689E1DCD1BF4EBC1009D5D02 /* TableViewController.xib */; };
+		68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; };
+		68A515BD1C07413E00C10D86 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BB1C07413E00C10D86 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		689E1DCC1BF4EBC1009D5D02 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		689E1DCD1BF4EBC1009D5D02 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		68A515BA1C07413E00C10D86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		68A515BB1C07413E00C10D86 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */,
+				68A515BD1C07413E00C10D86 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		689E1DA81BF4EAE7009D5D02 = {
 			isa = PBXGroup;
 			children = (
+				68A515BA1C07413E00C10D86 /* Alamofire.framework */,
+				68A515BB1C07413E00C10D86 /* SwiftyJSON.framework */,
 				689E1DB31BF4EAE7009D5D02 /* NewsApp */,
 				689E1DB21BF4EAE7009D5D02 /* Products */,
 			);
@@ -83,6 +91,7 @@
 				689E1DAD1BF4EAE7009D5D02 /* Sources */,
 				689E1DAE1BF4EAE7009D5D02 /* Frameworks */,
 				689E1DAF1BF4EAE7009D5D02 /* Resources */,
+				68A515BE1C07491600C10D86 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -139,6 +148,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68A515BE1C07491600C10D86 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AlamoFire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		689E1DAD1BF4EAE7009D5D02 /* Sources */ = {
@@ -259,6 +286,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.NewsApp;
@@ -270,6 +301,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.NewsApp;
@@ -296,6 +331,7 @@
 				689E1DC51BF4EAE7009D5D02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
