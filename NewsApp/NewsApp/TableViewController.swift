@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
+import Foundation
 
 class TableViewController: UITableViewController {
     
@@ -25,6 +28,27 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.registerNib(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
+        
+//        Alamofire.request(.GET, fetchFrom).responseJSON {
+//            response in
+//            if response.result.isSuccess {
+//                print(response)
+//            }
+//        }
+        
+
+        Alamofire.request(.GET, fetchFrom, parameters: nil, encoding: .JSON)
+            .responseJSON { response in
+//                print(response.request)  // original URL request
+//                print(response.response) // URL response
+//                print(response.data)     // server data
+//                print(response.result)   // result of response serialization
+                
+                
+                
+                
+                        print(response)
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

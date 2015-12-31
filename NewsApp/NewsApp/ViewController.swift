@@ -34,19 +34,19 @@ class ViewController: UIViewController {
         var feeds: [Dictionary<String, String>] =
         [
             [
-                "link": "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/top/rss",
+                "link": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/top/rss",
                 "title": "top"
             ],
             [
-                "link": "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/ruby/rss",
+                "link": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/ruby/rss",
                 "title": "ruby"
             ],
             [
-                "link": "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/ios/rss",
+                "link": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/ios/rss",
                 "title": "ios"
             ],
             [
-                "link": "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/infrastructure/rss",
+                "link": "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://menthas.com/infrastructure/rss",
                 "title": "infrastructure"
             ],
         ]
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
             feedController.title = feed["title"]
             controllerArray.append(feedController)
         }
-                
+        
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
         var parameters: [CAPSPageMenuOption] = [
@@ -85,15 +85,8 @@ class ViewController: UIViewController {
         self.addChildViewController(pageMenu!)
         self.view.addSubview(pageMenu!.view)
         
-        pageMenu!.didMoveToParentViewController(self)
+        pageMenu!.didMoveToParentViewController(self)        
         
-        
-        Alamofire.request(.GET, "http://qiita-stock.info/api.json").responseJSON {
-            response in
-            if response.result.isSuccess {
-                print(response)
-            }
-        }
     }
 
     override func didReceiveMemoryWarning() {
