@@ -11,6 +11,7 @@ import Alamofire
 import Foundation
 import AlamofireObjectMapper
 import RealmSwift
+import WebImage
 
 class TableViewController: UITableViewController {
     
