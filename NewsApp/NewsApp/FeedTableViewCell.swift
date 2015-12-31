@@ -9,6 +9,13 @@
 import UIKit
 
 class FeedTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    var url: String = ""
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +27,6 @@ class FeedTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
     
 }

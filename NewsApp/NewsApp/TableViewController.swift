@@ -11,11 +11,11 @@ import UIKit
 class TableViewController: UITableViewController {
     
     //Set up sample data
-    let articlesData = [
-        Article(title:"News1", description: "News1 description", thumbnail: "http://placehold.it/140x100", url: "http://google.co.jp"),
-        Article(title:"News2", description: "News2 description", thumbnail: "http://placehold.it/140x100", url: "http://yahoo.co.jp"),
-        Article(title:"News3", description: "News3 description", thumbnail: "http://placehold.it/140x100", url: "http://google.co.jp"),
-        Article(title:"News4", description: "News4 description", thumbnail: "http://placehold.it/140x100", url: "http://menthas.com/"),
+    var articlesData = [
+        Article(title:"News1", description: "News1 description", thumbnail: "https://placehold.it/140x100", url: "http://google.co.jp"),
+        Article(title:"News2", description: "News2 description", thumbnail: "https://placehold.it/140x100", url: "http://yahoo.co.jp"),
+        Article(title:"News3", description: "News3 description", thumbnail: "https://placehold.it/140x100", url: "http://google.co.jp"),
+        Article(title:"News4", description: "News4 description", thumbnail: "https://placehold.it/140x100", url: "http://menthas.com/"),
     ]
 
     
@@ -52,6 +52,16 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell : FeedTableViewCell = tableView.dequeueReusableCellWithIdentifier("FeedTableViewCell") as! FeedTableViewCell
+
+        let article = articlesData[indexPath.row] as Article
+        cell.titleLabel.text = article.title
+        cell.descriptionLabel.text = article.description
+
+        let imageUrl = NSURL(string: article.thumbnail)
+        let data = NSData(contentsOfURL: imageUrl!)
+        cell.thumbnailImageView.image = UIImage(data: data!)
+    
+
 
         
 
@@ -106,7 +116,7 @@ class TableViewController: UITableViewController {
     }
     */
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 64.0
+        return 180.0
     }
 
     
