@@ -17,6 +17,8 @@ class TableViewController: UITableViewController {
         Article(title:"News3", description: "News3 description", thumbnail: "https://placehold.it/140x100", url: "http://google.co.jp"),
         Article(title:"News4", description: "News4 description", thumbnail: "https://placehold.it/140x100", url: "http://menthas.com/"),
     ]
+    
+    var fetchFrom: String = ""
 
     
     override func viewDidLoad() {
