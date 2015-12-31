@@ -42,6 +42,16 @@
 		<false/>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>api.hitonobetsu.com</key>
+			<dict>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>capture.heartrails.com</key>
+			<dict>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>qiita-stock.info</key>
 			<dict>
 				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>

@@ -11,15 +11,14 @@ import ObjectMapper
 
 class ResponseData: Mappable {
     var feed: Feed?
-    //    var threeDayForecast: [Forecast]?
+
     
     required init?(_ map: Map){
         
     }
     
     func mapping(map: Map) {
-        //location <- map["location"]
-        //        threeDayForecast <- map["three_day_forecast"]
+        feed <- map["feed"]
     }
     
 }

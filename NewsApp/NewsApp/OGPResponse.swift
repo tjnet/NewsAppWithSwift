@@ -1,5 +1,5 @@
 //
-//  Feed.swift
+//  OGPResponse.swift
 //  NewsApp
 //
 //  Created by TanakaJun on 2015/12/31.
@@ -9,15 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class Feed: Mappable {
-    var entries: [Entry]?
+class OGPResponse: Mappable {
+    var image: String?
+    
     
     required init?(_ map: Map){
         
     }
     
     func mapping(map: Map) {
-        entries <- map["entries"]
+        image <- map["image"]
     }
     
 }

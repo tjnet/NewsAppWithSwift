@@ -89,17 +89,25 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell : FeedTableViewCell = tableView.dequeueReusableCellWithIdentifier("FeedTableViewCell") as! FeedTableViewCell
-
     
         // Configure the cell...
         let entry = lists[indexPath.row] as Entry
         cell.titleLabel.text = entry.title
         cell.descriptionLabel.text = entry.contentSnippet
-
-        let imageUrl = NSURL(string: "https://placehold.it/140x100")
-        let data = NSData(contentsOfURL: imageUrl!)
-        cell.thumbnailImageView.image = UIImage(data: data!)
-
+        
+        let imageUrl = NSURL(string: "http://capture.heartrails.com/400x300/cool?" + entry.link)!
+        
+        cell.thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage:nil, completed: { (image, error, cacheType, url) -> Void in
+            if (cacheType == SDImageCacheType.None && image != nil) {
+                cell.thumbnailImageView.alpha = 0;
+                UIView.animateWithDuration(2.0, animations: { () -> Void in
+                    cell.thumbnailImageView.alpha = 1
+                })
+            } else {
+                cell.thumbnailImageView.alpha = 1;
+            }
+        })
+    
         return cell
     }
 
