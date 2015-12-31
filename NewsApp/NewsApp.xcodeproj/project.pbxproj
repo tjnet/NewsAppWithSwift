@@ -14,13 +14,27 @@
 		689E1DBF1BF4EAE7009D5D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689E1DBD1BF4EAE7009D5D02 /* LaunchScreen.storyboard */; };
 		689E1DC71BF4EB35009D5D02 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */; };
 		68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; };
-		68A515BD1C07413E00C10D86 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BB1C07413E00C10D86 /* SwiftyJSON.framework */; };
 		68CFB6771C34D52B00E8B742 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB6751C34D52B00E8B742 /* TableViewController.swift */; };
 		68CFB6781C34D52B00E8B742 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB6761C34D52B00E8B742 /* TableViewController.xib */; };
 		68CFB67B1C34D98C00E8B742 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB6791C34D98C00E8B742 /* FeedTableViewCell.swift */; };
 		68CFB67C1C34D98C00E8B742 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB67A1C34D98C00E8B742 /* FeedTableViewCell.xib */; };
 		68CFB67E1C34DD4200E8B742 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB67D1C34DD4200E8B742 /* Article.swift */; };
+		68CFB6841C351D8900E8B742 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68CFB6851C351D8A00E8B742 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68CFB6841C351D8900E8B742 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		689E1DB11BF4EAE7009D5D02 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +52,7 @@
 		68CFB6791C34D98C00E8B742 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		68CFB67A1C34D98C00E8B742 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		68CFB67D1C34DD4200E8B742 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +61,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */,
-				68A515BD1C07413E00C10D86 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,7 @@
 		689E1DA81BF4EAE7009D5D02 = {
 			isa = PBXGroup;
 			children = (
+				68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */,
 				68A515BA1C07413E00C10D86 /* Alamofire.framework */,
 				68A515BB1C07413E00C10D86 /* SwiftyJSON.framework */,
 				689E1DB31BF4EAE7009D5D02 /* NewsApp */,
@@ -101,6 +116,7 @@
 				689E1DAE1BF4EAE7009D5D02 /* Frameworks */,
 				689E1DAF1BF4EAE7009D5D02 /* Resources */,
 				68A515BE1C07491600C10D86 /* ShellScript */,
+				68CFB6851C351D8A00E8B742 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,7 +183,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AlamoFire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 			);
 			outputPaths = (
 			);

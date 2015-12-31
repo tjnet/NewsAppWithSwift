@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import SwiftyJSON
 import Alamofire
 import Foundation
+import AlamofireObjectMapper
 
 class TableViewController: UITableViewController {
     
