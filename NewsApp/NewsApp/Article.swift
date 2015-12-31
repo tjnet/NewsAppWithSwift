@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Article {
+class Article {
     var title: String
     var description: String
     var thumbnail: String

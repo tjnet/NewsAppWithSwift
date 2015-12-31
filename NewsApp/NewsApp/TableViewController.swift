@@ -37,17 +37,27 @@ class TableViewController: UITableViewController {
 //        }
         
 
-        Alamofire.request(.GET, fetchFrom, parameters: nil, encoding: .JSON)
-            .responseJSON { response in
+//        Alamofire.request(.GET, fetchFrom, parameters: nil, encoding: .JSON)
+//            .responseJSON { response in
 //                print(response.request)  // original URL request
 //                print(response.response) // URL response
 //                print(response.data)     // server data
 //                print(response.result)   // result of response serialization
                 
+        Alamofire.request(.GET, fetchFrom).responseObject("responseData") { (response: Response<FeedResponse, NSError>) in
+        
                 
                 
+//                        print(response)
                 
-                        print(response)
+            let feedResponse = response.result.value
+            print(feedResponse?.feed?.entries)
+            
+            for entry in (feedResponse?.feed?.entries)! {
+                print(entry.title)
+            }
+            
+                
         }
 
         // Uncomment the following line to preserve selection between presentations
