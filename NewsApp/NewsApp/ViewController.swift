@@ -36,19 +36,19 @@ class ViewController: UIViewController {
         // (Can be any UIViewController subclass)
         // Make sure the title property of all view controllers is set
         // Example:
-        var controller1 : UIViewController = UIViewController(nibName: "TableViewController", bundle: nil)
+        var controller1 : UIViewController = TableViewController(nibName: "TableViewController", bundle: nil)
         controller1.title = "iOS"
         controllerArray.append(controller1)
         
-        var controller2 : UIViewController = UIViewController(nibName: "TableViewController", bundle: nil)
+        var controller2 : UIViewController = TableViewController(nibName: "TableViewController", bundle: nil)
         controller2.title = "Rails"
         controllerArray.append(controller2)
         
-        var controller3 : UIViewController = UIViewController(nibName: "TableViewController", bundle: nil)
+        var controller3 : UIViewController = TableViewController(nibName: "TableViewController", bundle: nil)
         controller3.title = "AWS"
         controllerArray.append(controller3)
         
-        var controller4 : UIViewController = UIViewController(nibName: "TableViewController", bundle: nil)
+        var controller4 : UIViewController = TableViewController(nibName: "TableViewController", bundle: nil)
         controller4.title = "Linux"
         controllerArray.append(controller4)
         
