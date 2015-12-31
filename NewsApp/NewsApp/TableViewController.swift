@@ -11,7 +11,6 @@ import Alamofire
 import Foundation
 import AlamofireObjectMapper
 import RealmSwift
-import WebImage
 
 class TableViewController: UITableViewController {
     
@@ -83,7 +82,11 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return lists.count
+        
+        if let listEntries = lists{
+            return listEntries.count
+        }
+        return 0
     }
 
 
