@@ -25,6 +25,8 @@
 		68CFB68B1C3523DA00E8B742 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB68A1C3523DA00E8B742 /* ResponseData.swift */; };
 		68CFB68D1C35247800E8B742 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB68C1C35247800E8B742 /* Feed.swift */; };
 		68CFB68F1C3524A500E8B742 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB68E1C3524A500E8B742 /* Entry.swift */; };
+		68CFB69C1C354AAD00E8B742 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB69A1C354AAD00E8B742 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68CFB69D1C354AAD00E8B742 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB69B1C354AAD00E8B742 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				68CFB6841C351D8900E8B742 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				68CFB69C1C354AAD00E8B742 /* Realm.framework in Embed Frameworks */,
+				68CFB69D1C354AAD00E8B742 /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +55,6 @@
 		689E1DC01BF4EAE7009D5D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		68A515BA1C07413E00C10D86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		68A515BB1C07413E00C10D86 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		68CFB6751C34D52B00E8B742 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		68CFB6761C34D52B00E8B742 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		68CFB6791C34D98C00E8B742 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 		68CFB68A1C3523DA00E8B742 /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		68CFB68C1C35247800E8B742 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		68CFB68E1C3524A500E8B742 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		68CFB69A1C354AAD00E8B742 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		68CFB69B1C354AAD00E8B742 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +86,11 @@
 		689E1DA81BF4EAE7009D5D02 = {
 			isa = PBXGroup;
 			children = (
+				68CFB69A1C354AAD00E8B742 /* Realm.framework */,
+				68CFB69B1C354AAD00E8B742 /* RealmSwift.framework */,
 				68CFB6881C35206700E8B742 /* ObjectMapper.framework */,
 				68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */,
 				68A515BA1C07413E00C10D86 /* Alamofire.framework */,
-				68A515BB1C07413E00C10D86 /* SwiftyJSON.framework */,
 				689E1DB31BF4EAE7009D5D02 /* NewsApp */,
 				689E1DB21BF4EAE7009D5D02 /* Products */,
 			);
@@ -201,6 +207,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AlamoFire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -267,6 +275,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -311,6 +320,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
