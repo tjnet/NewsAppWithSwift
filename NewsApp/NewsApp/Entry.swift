@@ -10,15 +10,22 @@ import Foundation
 import ObjectMapper
 import RealmSwift
 
-class Entry: Mappable {
-    //var entries: [Entry]?
-    //    var threeDayForecast: [Forecast]?
-    var title: String?
-    var link: String?
-    var contentSnippet: String?
+class Entry: Object, Mappable {
+//    var title: String?
+//    var link: String?
+//    var contentSnippet: String?
     
-    required init?(_ map: Map){
-        
+    dynamic var title = ""
+    dynamic var link = ""
+    dynamic var contentSnippet = ""
+    dynamic var category = ""
+    
+//    required init?(_ map: Map){
+//        
+//    }
+
+    required convenience init?(_ map: ObjectMapper.Map) {
+        self.init()
     }
     
     func mapping(map: Map) {

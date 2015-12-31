@@ -10,61 +10,61 @@ import UIKit
 import Alamofire
 import Foundation
 import AlamofireObjectMapper
+import RealmSwift
 
 class TableViewController: UITableViewController {
     
-    //Set up sample data
-    var articlesData = [
-        Article(title:"News1", description: "News1 description", thumbnail: "https://placehold.it/140x100", url: "http://google.co.jp"),
-        Article(title:"News2", description: "News2 description", thumbnail: "https://placehold.it/140x100", url: "http://yahoo.co.jp"),
-        Article(title:"News3", description: "News3 description", thumbnail: "https://placehold.it/140x100", url: "http://google.co.jp"),
-        Article(title:"News4", description: "News4 description", thumbnail: "https://placehold.it/140x100", url: "http://menthas.com/"),
-    ]
+    var lists : Results<Entry>!
     
     var fetchFrom: String = ""
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.registerNib(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
         
-//        Alamofire.request(.GET, fetchFrom).responseJSON {
-//            response in
-//            if response.result.isSuccess {
-//                print(response)
-//            }
-//        }
-        
-
-//        Alamofire.request(.GET, fetchFrom, parameters: nil, encoding: .JSON)
-//            .responseJSON { response in
-//                print(response.request)  // original URL request
-//                print(response.response) // URL response
-//                print(response.data)     // server data
-//                print(response.result)   // result of response serialization
-                
         Alamofire.request(.GET, fetchFrom).responseObject("responseData") { (response: Response<FeedResponse, NSError>) in
-        
-                
-                
-//                        print(response)
-                
+            
             let feedResponse = response.result.value
             print(feedResponse?.feed?.entries)
             
-            for entry in (feedResponse?.feed?.entries)! {
-                print(entry.title)
-            }
             
+            if let entries = feedResponse?.feed?.entries {
                 
-        }
+                try! uiRealm.write { () -> Void in
+                    
+                    let predicate = NSPredicate(format: "category = %@", self.title!)
+                    if let categorizedEntries: Results<Entry> = uiRealm.objects(Entry).filter(predicate) {
+                        uiRealm.delete(categorizedEntries)
+                    }
 
+                    for entry in entries {
+                        entry.category = self.title!
+                        uiRealm.add(entry)
+                        
+                        print(entry.title)
+                    }
+                    
+
+                }
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        readEntriesAndUpdateUI()
+    }
+    
+    func readEntriesAndUpdateUI(){
+        
+        let predicate = NSPredicate(format: "category = %@", self.title!)
+        lists = uiRealm.objects(Entry).filter(predicate)
+
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,7 +81,7 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return articlesData.count
+        return lists.count
     }
 
 
@@ -89,19 +89,15 @@ class TableViewController: UITableViewController {
 
         let cell : FeedTableViewCell = tableView.dequeueReusableCellWithIdentifier("FeedTableViewCell") as! FeedTableViewCell
 
-        let article = articlesData[indexPath.row] as Article
-        cell.titleLabel.text = article.title
-        cell.descriptionLabel.text = article.description
+    
+        // Configure the cell...
+        let entry = lists[indexPath.row] as Entry
+        cell.titleLabel.text = entry.title
+        cell.descriptionLabel.text = entry.contentSnippet
 
-        let imageUrl = NSURL(string: article.thumbnail)
+        let imageUrl = NSURL(string: "https://placehold.it/140x100")
         let data = NSData(contentsOfURL: imageUrl!)
         cell.thumbnailImageView.image = UIImage(data: data!)
-    
-
-
-        
-
-        // Configure the cell...
 
         return cell
     }
