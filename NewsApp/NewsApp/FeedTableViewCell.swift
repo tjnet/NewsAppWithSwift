@@ -36,7 +36,8 @@ class FeedTableViewCell: UITableViewCell {
         
         let imageUrl = NSURL(string: "http://capture.heartrails.com/400x300/cool?" + entry.link)!
         
-        thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage:nil, completed: { (image, error, cacheType, url) -> Void in
+        //thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage: nil, options: SDWebImageOptions.RefreshCached, completed: { (image, error, cacheType, url) ->Void in
+        thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage: nil, completed: { (image, error, cacheType, url) -> Void in
             if (cacheType == SDImageCacheType.None && image != nil) {
                 self.thumbnailImageView.alpha = 0;
                 UIView.animateWithDuration(2.0, animations: { () -> Void in
@@ -46,7 +47,6 @@ class FeedTableViewCell: UITableViewCell {
                 self.thumbnailImageView.alpha = 1;
             }
         })
-
         
     }
     
