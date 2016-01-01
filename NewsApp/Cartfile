@@ -2,3 +2,4 @@ github "Alamofire/Alamofire" ~> 3.0
 github "tristanhimmelman/AlamofireObjectMapper" ~> 2.1
 github "realm/realm-cocoa" "v0.97.0"
 github "rs/SDWebImage" "3.7.3"
+github "nolanw/HTMLReader" "v0.9.3"

@@ -16,6 +16,7 @@
 		689E1DBF1BF4EAE7009D5D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689E1DBD1BF4EAE7009D5D02 /* LaunchScreen.storyboard */; };
 		689E1DC71BF4EB35009D5D02 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */; };
 		68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; };
+		68C3EB331C362B8F0094B465 /* HTMLReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C3EB321C362B8F0094B465 /* HTMLReader.framework */; };
 		68CFB6771C34D52B00E8B742 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB6751C34D52B00E8B742 /* TableViewController.swift */; };
 		68CFB6781C34D52B00E8B742 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB6761C34D52B00E8B742 /* TableViewController.xib */; };
 		68CFB67B1C34D98C00E8B742 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB6791C34D98C00E8B742 /* FeedTableViewCell.swift */; };
@@ -59,6 +60,7 @@
 		689E1DC01BF4EAE7009D5D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		68A515BA1C07413E00C10D86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		68C3EB321C362B8F0094B465 /* HTMLReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTMLReader.framework; path = Carthage/Build/iOS/HTMLReader.framework; sourceTree = "<group>"; };
 		68CFB6751C34D52B00E8B742 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		68CFB6761C34D52B00E8B742 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		68CFB6791C34D98C00E8B742 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C3EB331C362B8F0094B465 /* HTMLReader.framework in Frameworks */,
 				68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */,
 				68CFB6891C35206700E8B742 /* ObjectMapper.framework in Frameworks */,
 				685E2F881C3570AA006943AB /* WebImage.framework in Frameworks */,
@@ -91,6 +94,7 @@
 		689E1DA81BF4EAE7009D5D02 = {
 			isa = PBXGroup;
 			children = (
+				68C3EB321C362B8F0094B465 /* HTMLReader.framework */,
 				685E2F871C3570AA006943AB /* WebImage.framework */,
 				68CFB69A1C354AAD00E8B742 /* Realm.framework */,
 				68CFB69B1C354AAD00E8B742 /* RealmSwift.framework */,
@@ -217,6 +221,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/HTMLReader.framework",
 			);
 			outputPaths = (
 			);

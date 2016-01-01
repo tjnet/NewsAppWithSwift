@@ -8,6 +8,7 @@
 
 import UIKit
 import WebImage
+import Alamofire
 
 
 class FeedTableViewCell: UITableViewCell {
@@ -33,20 +34,48 @@ class FeedTableViewCell: UITableViewCell {
     func configure(entry: Entry){
         titleLabel.text = entry.title
         descriptionLabel.text = entry.contentSnippet
+        var link = entry.link
+
         
-        let imageUrl = NSURL(string: "http://capture.heartrails.com/400x300/cool?" + entry.link)!
+        var imageUrl: NSURL?
         
-        //thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage: nil, options: SDWebImageOptions.RefreshCached, completed: { (image, error, cacheType, url) ->Void in
-        thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage: nil, completed: { (image, error, cacheType, url) -> Void in
-            if (cacheType == SDImageCacheType.None && image != nil) {
-                self.thumbnailImageView.alpha = 0;
-                UIView.animateWithDuration(2.0, animations: { () -> Void in
-                    self.thumbnailImageView.alpha = 1
-                })
-            } else {
-                self.thumbnailImageView.alpha = 1;
+        Alamofire.request(.GET, "http://api.hitonobetsu.com/ogp/analysis?url=" + entry.link).responseObject("") { (response: Response<OGPResponse, NSError>) in
+            
+            let ogpResponse = response.result.value
+
+            
+            if let ogpImgSrc = ogpResponse?.image {
+                if ogpImgSrc.rangeOfString("http://") == nil{
+                    imageUrl = NSURL(string: ogpImgSrc)
+                }
+            }else {
+                imageUrl = NSURL(string: "http://capture.heartrails.com/400x300/cool?" + link)!
             }
-        })
+            
+
+            print(imageUrl)
+            
+            self.thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage: nil, options: SDWebImageOptions.RefreshCached, completed: { (image, error, cacheType, url) ->Void in
+                //        thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage: nil, completed: { (image, error, cacheType, url) -> Void in
+                if (cacheType == SDImageCacheType.None && image != nil) {
+                    self.thumbnailImageView.alpha = 0;
+                    UIView.animateWithDuration(2.0, animations: { () -> Void in
+                        self.thumbnailImageView.alpha = 1
+                    })
+                } else {
+                    self.thumbnailImageView.alpha = 1;
+                }
+            })
+
+
+        }
+        
+        
+        
+        
+        
+
+        
         
     }
     
