@@ -12,6 +12,7 @@ import Foundation
 import AlamofireObjectMapper
 import RealmSwift
 import Realm
+import SafariServices
 
 class TableViewController: UITableViewController {
     
@@ -149,6 +150,21 @@ class TableViewController: UITableViewController {
     */
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 180.0
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let entry = lists[indexPath.row] as Entry
+        
+        let svc = SFSafariViewController(URL: NSURL(string: entry.link)!)
+        self.presentViewController(svc, animated: true, completion: nil)
+
+        
+        reloadRowsAtIndexPath(indexPath)
+    }
+    
+    
+    func reloadRowsAtIndexPath(indexPath: NSIndexPath) {
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
     }
 
     

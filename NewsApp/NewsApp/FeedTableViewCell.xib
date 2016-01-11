@@ -62,7 +62,7 @@
                 <outlet property="thumbnailImageView" destination="msh-Yb-pzT" id="Z6t-wR-0eP"/>
                 <outlet property="titleLabel" destination="He3-Wy-nEF" id="Oir-ZU-bHz"/>
             </connections>
-            <point key="canvasLocation" x="263" y="206"/>
+            <point key="canvasLocation" x="236" y="192"/>
         </tableViewCell>
     </objects>
 </document>
