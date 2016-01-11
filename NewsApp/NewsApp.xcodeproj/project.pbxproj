@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6822A0A51C3577AC00E90869 /* OGPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6822A0A41C3577AC00E90869 /* OGPResponse.swift */; };
 		685E2F881C3570AA006943AB /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685E2F871C3570AA006943AB /* WebImage.framework */; };
+		68746E181C43537B001AAD76 /* TJExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68746E171C43537B001AAD76 /* TJExtensions.swift */; };
+		68746E1B1C435DD1001AAD76 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68746E1A1C435DD1001AAD76 /* API.swift */; };
 		689E1DB51BF4EAE7009D5D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DB41BF4EAE7009D5D02 /* AppDelegate.swift */; };
 		689E1DB71BF4EAE7009D5D02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DB61BF4EAE7009D5D02 /* ViewController.swift */; };
 		689E1DBA1BF4EAE7009D5D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689E1DB81BF4EAE7009D5D02 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 /* Begin PBXFileReference section */
 		6822A0A41C3577AC00E90869 /* OGPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGPResponse.swift; sourceTree = "<group>"; };
 		685E2F871C3570AA006943AB /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
+		68746E171C43537B001AAD76 /* TJExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJExtensions.swift; sourceTree = "<group>"; };
+		68746E1A1C435DD1001AAD76 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		689E1DB11BF4EAE7009D5D02 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689E1DB41BF4EAE7009D5D02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		689E1DB61BF4EAE7009D5D02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68746E161C435358001AAD76 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				68746E171C43537B001AAD76 /* TJExtensions.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		68746E191C435DAA001AAD76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				68746E1A1C435DD1001AAD76 /* API.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		689E1DA81BF4EAE7009D5D02 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +137,8 @@
 		689E1DB31BF4EAE7009D5D02 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				68746E191C435DAA001AAD76 /* Services */,
+				68746E161C435358001AAD76 /* Utils */,
 				689E1DB41BF4EAE7009D5D02 /* AppDelegate.swift */,
 				689E1DB61BF4EAE7009D5D02 /* ViewController.swift */,
 				689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */,
@@ -243,6 +265,8 @@
 				689E1DB51BF4EAE7009D5D02 /* AppDelegate.swift in Sources */,
 				6822A0A51C3577AC00E90869 /* OGPResponse.swift in Sources */,
 				68CFB67E1C34DD4200E8B742 /* Article.swift in Sources */,
+				68746E181C43537B001AAD76 /* TJExtensions.swift in Sources */,
+				68746E1B1C435DD1001AAD76 /* API.swift in Sources */,
 				689E1DC71BF4EB35009D5D02 /* CAPSPageMenu.swift in Sources */,
 				68CFB6771C34D52B00E8B742 /* TableViewController.swift in Sources */,
 				68CFB68B1C3523DA00E8B742 /* ResponseData.swift in Sources */,

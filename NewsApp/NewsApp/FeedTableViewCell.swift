@@ -17,8 +17,19 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var url: String = ""
-    
+    var link: String! {
+        didSet {
+            Alamofire.request(.GET, ArticleAPI.ogpImage + link).responseObject("") { (response: Response<OGPResponse, NSError>) in
+                var imageUrl: NSURL?
+                let ogpResponse = response.result.value
+                if let ogpImgSrc = ogpResponse?.image {
+                        imageUrl = NSURL(string: ogpImgSrc)
+                        print(imageUrl)
+                        self.setThumbnailWithFadeInAnimation(imageUrl)
+                }
+            }
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,50 +45,21 @@ class FeedTableViewCell: UITableViewCell {
     func configure(entry: Entry){
         titleLabel.text = entry.title
         descriptionLabel.text = entry.contentSnippet
-        var link = entry.link
-
-        
-        var imageUrl: NSURL?
-        
-        Alamofire.request(.GET, "http://api.hitonobetsu.com/ogp/analysis?url=" + entry.link).responseObject("") { (response: Response<OGPResponse, NSError>) in
-            
-            let ogpResponse = response.result.value
-
-            
-            if let ogpImgSrc = ogpResponse?.image {
-                if ogpImgSrc.rangeOfString("http://") == nil{
-                    imageUrl = NSURL(string: ogpImgSrc)
-                }
-            }else {
-                imageUrl = NSURL(string: "http://capture.heartrails.com/400x300/cool?" + link)!
-            }
-            
-
-            print(imageUrl)
-            
-            self.thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage: nil, options: SDWebImageOptions.RefreshCached, completed: { (image, error, cacheType, url) ->Void in
-                //        thumbnailImageView.sd_setImageWithURL(imageUrl, placeholderImage: nil, completed: { (image, error, cacheType, url) -> Void in
-                if (cacheType == SDImageCacheType.None && image != nil) {
-                    self.thumbnailImageView.alpha = 0;
-                    UIView.animateWithDuration(2.0, animations: { () -> Void in
-                        self.thumbnailImageView.alpha = 1
-                    })
-                } else {
-                    self.thumbnailImageView.alpha = 1;
-                }
-            })
-
-
-        }
-        
-        
-        
-        
-        
-
-        
-        
+        self.link = entry.link
     }
     
+    func setThumbnailWithFadeInAnimation(imageUrl: NSURL!){
+        self.thumbnailImageView.loadWebImage(imageUrl, placeholderImage: nil, completeion: {
+            (image, error, cacheType, url) ->Void in
+            if (cacheType == SDImageCacheType.None && image != nil) {
+                self.thumbnailImageView.alpha = 0;
+                UIView.animateWithDuration(2.0, animations: { () -> Void in
+                    self.thumbnailImageView.alpha = 1
+                })
+            } else {
+                self.thumbnailImageView.alpha = 1;
+            }
+        })
+    }
     
 }
