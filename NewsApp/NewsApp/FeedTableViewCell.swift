@@ -24,7 +24,7 @@ class FeedTableViewCell: UITableViewCell {
                 let ogpResponse = response.result.value
                 if let ogpImgSrc = ogpResponse?.image {
                         imageUrl = NSURL(string: ogpImgSrc)
-                        print(imageUrl)
+//                        print(imageUrl)
                         self.setThumbnailWithFadeInAnimation(imageUrl)
                 }
             }

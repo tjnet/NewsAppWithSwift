@@ -11,6 +11,7 @@ import Alamofire
 import Foundation
 import AlamofireObjectMapper
 import RealmSwift
+import Realm
 
 class TableViewController: UITableViewController {
     
@@ -31,21 +32,19 @@ class TableViewController: UITableViewController {
             
             if let entries = feedResponse?.feed?.entries {
                 
+                print("Our default realm is located at \(RLMRealm.defaultRealm().path)")
+                
                 try! uiRealm.write { () -> Void in
                     
-                    let predicate = NSPredicate(format: "category = %@", self.title!)
-                    if let categorizedEntries: Results<Entry> = uiRealm.objects(Entry).filter(predicate) {
-                        uiRealm.delete(categorizedEntries)
-                    }
-
                     for entry in entries {
                         entry.category = self.title!
-                        uiRealm.add(entry)
                         
-                        print(entry.title)
+                        //see https://github.com/realm/realm-cocoa/issues/2149
+                        //see https://realm.io/docs/swift/latest/api/Classes/Realm.html#/s:FC10RealmSwift5Realm3adduRq_Ss12SequenceTypedqqq_S1_9GeneratorSs13GeneratorType7ElementCS_6Object_FS0_FTq_6updateSb_T_
+                        
+                        uiRealm.add(entry, update: true)
+                        
                     }
-                    
-
                 }
                 self.readEntriesAndUpdateUI()
             }

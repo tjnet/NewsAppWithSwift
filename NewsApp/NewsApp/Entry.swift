@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 import RealmSwift
 
+
 class Entry: Object, Mappable {
 //    var title: String?
 //    var link: String?
@@ -32,6 +33,10 @@ class Entry: Object, Mappable {
         title <- map["title"]
         link <- map["link"]
         contentSnippet <- map["contentSnippet"]
+    }
+    
+    override class func primaryKey() -> String {
+        return "link"
     }
     
 }
