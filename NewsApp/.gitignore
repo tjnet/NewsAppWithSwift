@@ -1,0 +1,6 @@
+# others
+*.swp
+.DS_Store
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/

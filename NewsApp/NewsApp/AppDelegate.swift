@@ -1,4 +1,4 @@
-//
+    //
 //  AppDelegate.swift
 //  NewsApp
 //
@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import RealmSwift
 
+let uiRealm = try! Realm()
+    
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
