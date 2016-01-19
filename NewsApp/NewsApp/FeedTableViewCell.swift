@@ -51,14 +51,12 @@ class FeedTableViewCell: UITableViewCell {
     func setThumbnailWithFadeInAnimation(imageUrl: NSURL!){
         self.thumbnailImageView.loadWebImage(imageUrl, placeholderImage: nil, completeion: {
             (image, error, cacheType, url) ->Void in
-            if (cacheType == SDImageCacheType.None && image != nil) {
-                self.thumbnailImageView.alpha = 0;
-                UIView.animateWithDuration(2.0, animations: { () -> Void in
+            self.thumbnailImageView.alpha = 0
+            
+            UIView.animateWithDuration(0.25,
+                animations: {
                     self.thumbnailImageView.alpha = 1
-                })
-            } else {
-                self.thumbnailImageView.alpha = 1;
-            }
+            })
         })
     }
     
