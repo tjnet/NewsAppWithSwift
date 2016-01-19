@@ -27,28 +27,27 @@ class TableViewController: UITableViewController {
         
         Alamofire.request(.GET, fetchFrom).responseObject("responseData") { (response: Alamofire.Response<FeedResponse, NSError>) in
             
-            let feedResponse = response.result.value
-            print(feedResponse?.feed?.entries)
-            
-            
-            if let entries = feedResponse?.feed?.entries {
-                
-                print("Our default realm is located at \(RLMRealm.defaultRealm().path)")
-                
-                try! uiRealm.write { () -> Void in
-                    
-                    for entry in entries {
-                        entry.category = self.title!
-                        
-                        //see https://github.com/realm/realm-cocoa/issues/2149
-                        //see https://realm.io/docs/swift/latest/api/Classes/Realm.html#/s:FC10RealmSwift5Realm3adduRq_Ss12SequenceTypedqqq_S1_9GeneratorSs13GeneratorType7ElementCS_6Object_FS0_FTq_6updateSb_T_
-                        
-                        uiRealm.add(entry, update: true)
-                        
-                    }
-                }
-                self.readEntriesAndUpdateUI()
+            guard let entries = response.result.value?.feed?.entries else {
+                return
             }
+            
+            print(entries)
+            print("Our default realm is located at \(RLMRealm.defaultRealm().path)")
+            
+            try! uiRealm.write { () -> Void in
+                
+                for entry in entries {
+                    entry.category = self.title!
+                    
+                    //see https://github.com/realm/realm-cocoa/issues/2149
+                    //see https://realm.io/docs/swift/latest/api/Classes/Realm.html#/s:FC10RealmSwift5Realm3adduRq_Ss12SequenceTypedqqq_S1_9GeneratorSs13GeneratorType7ElementCS_6Object_FS0_FTq_6updateSb_T_
+                    
+                    uiRealm.add(entry, update: true)
+                    
+                }
+            }
+            self.readEntriesAndUpdateUI()
+
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
