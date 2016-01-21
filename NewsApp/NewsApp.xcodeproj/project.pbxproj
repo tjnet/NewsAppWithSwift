@@ -11,6 +11,7 @@
 		685E2F881C3570AA006943AB /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685E2F871C3570AA006943AB /* WebImage.framework */; };
 		68746E181C43537B001AAD76 /* TJExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68746E171C43537B001AAD76 /* TJExtensions.swift */; };
 		68746E1B1C435DD1001AAD76 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68746E1A1C435DD1001AAD76 /* API.swift */; };
+		6891BA3D1C510ED800D5E464 /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6891BA3C1C510ED800D5E464 /* NewsAppTests.swift */; };
 		689E1DB51BF4EAE7009D5D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DB41BF4EAE7009D5D02 /* AppDelegate.swift */; };
 		689E1DB71BF4EAE7009D5D02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DB61BF4EAE7009D5D02 /* ViewController.swift */; };
 		689E1DBA1BF4EAE7009D5D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689E1DB81BF4EAE7009D5D02 /* Main.storyboard */; };
@@ -34,6 +35,16 @@
 		68CFB69D1C354AAD00E8B742 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB69B1C354AAD00E8B742 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6891BA3F1C510ED800D5E464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689E1DA91BF4EAE7009D5D02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 689E1DB01BF4EAE7009D5D02;
+			remoteInfo = NewsApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		68CFB6851C351D8A00E8B742 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -55,6 +66,9 @@
 		685E2F871C3570AA006943AB /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
 		68746E171C43537B001AAD76 /* TJExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJExtensions.swift; sourceTree = "<group>"; };
 		68746E1A1C435DD1001AAD76 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6891BA3A1C510ED800D5E464 /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6891BA3C1C510ED800D5E464 /* NewsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppTests.swift; sourceTree = "<group>"; };
+		6891BA3E1C510ED800D5E464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689E1DB11BF4EAE7009D5D02 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689E1DB41BF4EAE7009D5D02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		689E1DB61BF4EAE7009D5D02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +95,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6891BA371C510ED800D5E464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		689E1DAE1BF4EAE7009D5D02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +132,15 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		6891BA3B1C510ED800D5E464 /* NewsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6891BA3C1C510ED800D5E464 /* NewsAppTests.swift */,
+				6891BA3E1C510ED800D5E464 /* Info.plist */,
+			);
+			path = NewsAppTests;
+			sourceTree = "<group>";
+		};
 		689E1DA81BF4EAE7009D5D02 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +152,7 @@
 				68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */,
 				68A515BA1C07413E00C10D86 /* Alamofire.framework */,
 				689E1DB31BF4EAE7009D5D02 /* NewsApp */,
+				6891BA3B1C510ED800D5E464 /* NewsAppTests */,
 				689E1DB21BF4EAE7009D5D02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				689E1DB11BF4EAE7009D5D02 /* NewsApp.app */,
+				6891BA3A1C510ED800D5E464 /* NewsAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +195,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6891BA391C510ED800D5E464 /* NewsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6891BA431C510ED800D5E464 /* Build configuration list for PBXNativeTarget "NewsAppTests" */;
+			buildPhases = (
+				6891BA361C510ED800D5E464 /* Sources */,
+				6891BA371C510ED800D5E464 /* Frameworks */,
+				6891BA381C510ED800D5E464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6891BA401C510ED800D5E464 /* PBXTargetDependency */,
+			);
+			name = NewsAppTests;
+			productName = NewsAppTests;
+			productReference = 6891BA3A1C510ED800D5E464 /* NewsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		689E1DB01BF4EAE7009D5D02 /* NewsApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 689E1DC31BF4EAE7009D5D02 /* Build configuration list for PBXNativeTarget "NewsApp" */;
@@ -188,10 +238,14 @@
 		689E1DA91BF4EAE7009D5D02 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = edu.self;
 				TargetAttributes = {
+					6891BA391C510ED800D5E464 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 689E1DB01BF4EAE7009D5D02;
+					};
 					689E1DB01BF4EAE7009D5D02 = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -211,11 +265,19 @@
 			projectRoot = "";
 			targets = (
 				689E1DB01BF4EAE7009D5D02 /* NewsApp */,
+				6891BA391C510ED800D5E464 /* NewsAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6891BA381C510ED800D5E464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		689E1DAF1BF4EAE7009D5D02 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +316,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6891BA361C510ED800D5E464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6891BA3D1C510ED800D5E464 /* NewsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		689E1DAD1BF4EAE7009D5D02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +346,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6891BA401C510ED800D5E464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 689E1DB01BF4EAE7009D5D02 /* NewsApp */;
+			targetProxy = 6891BA3F1C510ED800D5E464 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		689E1DB81BF4EAE7009D5D02 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -296,6 +374,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6891BA411C510ED800D5E464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.NewsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsApp.app/NewsApp";
+			};
+			name = Debug;
+		};
+		6891BA421C510ED800D5E464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.NewsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsApp.app/NewsApp";
+			};
+			name = Release;
+		};
 		689E1DC11BF4EAE7009D5D02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,6 +516,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6891BA431C510ED800D5E464 /* Build configuration list for PBXNativeTarget "NewsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6891BA411C510ED800D5E464 /* Debug */,
+				6891BA421C510ED800D5E464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		689E1DAC1BF4EAE7009D5D02 /* Build configuration list for PBXProject "NewsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
