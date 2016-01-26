@@ -1205,6 +1205,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1220,6 +1221,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1241,6 +1243,7 @@
 				6821BC631C5132E500D8C42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6821BC671C5132E500D8C42B /* Build configuration list for PBXNativeTarget "NewsAppModelTests" */ = {
 			isa = XCConfigurationList;
@@ -1249,6 +1252,7 @@
 				6821BC651C5132E500D8C42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6821BC841C5133D700D8C42B /* Build configuration list for PBXNativeTarget "NewsAppViewModel" */ = {
 			isa = XCConfigurationList;
@@ -1257,6 +1261,7 @@
 				6821BC861C5133D700D8C42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6821BC871C5133D700D8C42B /* Build configuration list for PBXNativeTarget "NewsAppViewModelTests" */ = {
 			isa = XCConfigurationList;
@@ -1265,6 +1270,7 @@
 				6821BC891C5133D700D8C42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6821BCAE1C5136E700D8C42B /* Build configuration list for PBXNativeTarget "NewsAppView" */ = {
 			isa = XCConfigurationList;
@@ -1273,6 +1279,7 @@
 				6821BCB01C5136E700D8C42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6821BCB11C5136E700D8C42B /* Build configuration list for PBXNativeTarget "NewsAppViewTests" */ = {
 			isa = XCConfigurationList;
@@ -1281,6 +1288,7 @@
 				6821BCB31C5136E700D8C42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6891BA431C510ED800D5E464 /* Build configuration list for PBXNativeTarget "NewsAppTests" */ = {
 			isa = XCConfigurationList;
