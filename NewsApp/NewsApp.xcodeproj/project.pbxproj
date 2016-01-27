@@ -170,6 +170,11 @@
 		6891BA3A1C510ED800D5E464 /* NewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6891BA3C1C510ED800D5E464 /* NewsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppTests.swift; sourceTree = "<group>"; };
 		6891BA3E1C510ED800D5E464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689AF6291C59066C00C50B07 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		689AF62A1C59066C00C50B07 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		689AF62C1C59066C00C50B07 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		689AF62D1C59066C00C50B07 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		689E1DB11BF4EAE7009D5D02 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689E1DB41BF4EAE7009D5D02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		689E1DB61BF4EAE7009D5D02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -362,10 +367,14 @@
 			path = NewsAppTests;
 			sourceTree = "<group>";
 		};
-		689E1DA81BF4EAE7009D5D02 = {
+		689AF6281C59061F00C50B07 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				6821BCB41C51370B00D8C42B /* Tests */,
+				689AF6291C59066C00C50B07 /* Nimble.framework */,
+				689AF62A1C59066C00C50B07 /* Quick.framework */,
+				689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */,
+				689AF62C1C59066C00C50B07 /* Result.framework */,
+				689AF62D1C59066C00C50B07 /* Swinject.framework */,
 				68C3EB321C362B8F0094B465 /* HTMLReader.framework */,
 				685E2F871C3570AA006943AB /* WebImage.framework */,
 				68CFB69A1C354AAD00E8B742 /* Realm.framework */,
@@ -373,6 +382,15 @@
 				68CFB6881C35206700E8B742 /* ObjectMapper.framework */,
 				68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */,
 				68A515BA1C07413E00C10D86 /* Alamofire.framework */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		689E1DA81BF4EAE7009D5D02 = {
+			isa = PBXGroup;
+			children = (
+				689AF6281C59061F00C50B07 /* New Group */,
+				6821BCB41C51370B00D8C42B /* Tests */,
 				689E1DB31BF4EAE7009D5D02 /* NewsApp */,
 				6821BC4C1C5132E400D8C42B /* NewsAppModel */,
 				6821BC6E1C5133D700D8C42B /* NewsAppViewModel */,
