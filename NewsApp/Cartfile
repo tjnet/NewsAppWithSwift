@@ -4,3 +4,7 @@ github "realm/realm-cocoa" "v0.97.0"
 github "rs/SDWebImage" "3.7.3"
 github "nolanw/HTMLReader" "v0.9.3"
 github "ReactiveCocoa/ReactiveCocoa" "v4.0.0-RC.1"
+github "Swinject/Swinject" ~> 1.0.0
+github "Quick/Nimble" "v3.0.0"
+github "Quick/Quick" "v0.8.0"
+
