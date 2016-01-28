@@ -60,6 +60,29 @@
 		6891BA1E1C5A3383008160AE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; };
 		6891BA1F1C5A3383008160AE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; };
 		6891BA201C5A3383008160AE /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62D1C59066C00C50B07 /* Swinject.framework */; };
+		6891BA221C5A36FF008160AE /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA231C5A36FF008160AE /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA241C5A3700008160AE /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA251C5A3700008160AE /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA261C5A3700008160AE /* ObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6881C35206700E8B742 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA271C5A3700008160AE /* AlamofireObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA281C5A3700008160AE /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA2A1C5A3756008160AE /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA2B1C5A3757008160AE /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA2C1C5A3757008160AE /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA2D1C5A3757008160AE /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA2E1C5A3757008160AE /* ObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6881C35206700E8B742 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA2F1C5A3757008160AE /* AlamofireObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA301C5A3758008160AE /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA321C5A3788008160AE /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA331C5A3789008160AE /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA341C5A3789008160AE /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA351C5A3789008160AE /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA361C5A3789008160AE /* ObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6881C35206700E8B742 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA371C5A3789008160AE /* AlamofireObjectMapper.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA381C5A378A008160AE /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA3A1C5A37B4008160AE /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6891BA3B1C5A37B5008160AE /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6891BA3D1C510ED800D5E464 /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6891BA3C1C510ED800D5E464 /* NewsAppTests.swift */; };
 		689E1DB51BF4EAE7009D5D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DB41BF4EAE7009D5D02 /* AppDelegate.swift */; };
 		689E1DB71BF4EAE7009D5D02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DB61BF4EAE7009D5D02 /* ViewController.swift */; };
@@ -151,6 +174,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6891BA211C5A3687008160AE /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6891BA221C5A36FF008160AE /* Nimble.framework in Copy Frameworks */,
+				6891BA231C5A36FF008160AE /* Quick.framework in Copy Frameworks */,
+				6891BA241C5A3700008160AE /* ReactiveCocoa.framework in Copy Frameworks */,
+				6891BA251C5A3700008160AE /* Result.framework in Copy Frameworks */,
+				6891BA261C5A3700008160AE /* ObjectMapper.framework in Copy Frameworks */,
+				6891BA271C5A3700008160AE /* AlamofireObjectMapper.framework in Copy Frameworks */,
+				6891BA281C5A3700008160AE /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6891BA291C5A373F008160AE /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6891BA2A1C5A3756008160AE /* Nimble.framework in Copy Frameworks */,
+				6891BA2B1C5A3757008160AE /* Quick.framework in Copy Frameworks */,
+				6891BA2C1C5A3757008160AE /* ReactiveCocoa.framework in Copy Frameworks */,
+				6891BA2D1C5A3757008160AE /* Result.framework in Copy Frameworks */,
+				6891BA2E1C5A3757008160AE /* ObjectMapper.framework in Copy Frameworks */,
+				6891BA2F1C5A3757008160AE /* AlamofireObjectMapper.framework in Copy Frameworks */,
+				6891BA301C5A3758008160AE /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6891BA311C5A376A008160AE /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6891BA321C5A3788008160AE /* Nimble.framework in Copy Frameworks */,
+				6891BA331C5A3789008160AE /* Quick.framework in Copy Frameworks */,
+				6891BA341C5A3789008160AE /* ReactiveCocoa.framework in Copy Frameworks */,
+				6891BA351C5A3789008160AE /* Result.framework in Copy Frameworks */,
+				6891BA361C5A3789008160AE /* ObjectMapper.framework in Copy Frameworks */,
+				6891BA371C5A3789008160AE /* AlamofireObjectMapper.framework in Copy Frameworks */,
+				6891BA381C5A378A008160AE /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6891BA391C5A379C008160AE /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6891BA3A1C5A37B4008160AE /* Nimble.framework in Copy Frameworks */,
+				6891BA3B1C5A37B5008160AE /* Quick.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6891BA3C1C5A3898008160AE /* Copy dSYMs */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy dSYMs";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68CFB6851C351D8A00E8B742 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,6 +641,7 @@
 				6821BC501C5132E400D8C42B /* Sources */,
 				6821BC511C5132E400D8C42B /* Frameworks */,
 				6821BC521C5132E400D8C42B /* Resources */,
+				6891BA211C5A3687008160AE /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -582,6 +679,7 @@
 				6821BC721C5133D700D8C42B /* Sources */,
 				6821BC731C5133D700D8C42B /* Frameworks */,
 				6821BC741C5133D700D8C42B /* Resources */,
+				6891BA291C5A373F008160AE /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -619,6 +717,7 @@
 				6821BC9C1C5136E700D8C42B /* Sources */,
 				6821BC9D1C5136E700D8C42B /* Frameworks */,
 				6821BC9E1C5136E700D8C42B /* Resources */,
+				6891BA311C5A376A008160AE /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -637,6 +736,7 @@
 				6891BA361C510ED800D5E464 /* Sources */,
 				6891BA371C510ED800D5E464 /* Frameworks */,
 				6891BA381C510ED800D5E464 /* Resources */,
+				6891BA391C5A379C008160AE /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -657,6 +757,7 @@
 				689E1DAF1BF4EAE7009D5D02 /* Resources */,
 				68A515BE1C07491600C10D86 /* ShellScript */,
 				68CFB6851C351D8A00E8B742 /* Embed Frameworks */,
+				6891BA3C1C5A3898008160AE /* Copy dSYMs */,
 			);
 			buildRules = (
 			);
@@ -813,6 +914,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/HTMLReader.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 			);
 			outputPaths = (
 			);
