@@ -35,6 +35,31 @@
 		685E2F881C3570AA006943AB /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685E2F871C3570AA006943AB /* WebImage.framework */; };
 		68746E181C43537B001AAD76 /* TJExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68746E171C43537B001AAD76 /* TJExtensions.swift */; };
 		68746E1B1C435DD1001AAD76 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68746E1A1C435DD1001AAD76 /* API.swift */; };
+		6891BA081C5A30F9008160AE /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6881C35206700E8B742 /* ObjectMapper.framework */; };
+		6891BA091C5A30F9008160AE /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */; };
+		6891BA0A1C5A30F9008160AE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; };
+		6891BA0B1C5A3110008160AE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; };
+		6891BA0C1C5A3110008160AE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; };
+		6891BA0D1C5A3149008160AE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; };
+		6891BA0E1C5A3149008160AE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; };
+		6891BA0F1C5A315F008160AE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; };
+		6891BA101C5A315F008160AE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; };
+		6891BA111C5A319C008160AE /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62D1C59066C00C50B07 /* Swinject.framework */; };
+		6891BA121C5A32AA008160AE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; };
+		6891BA131C5A32AA008160AE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; };
+		6891BA141C5A32AA008160AE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; };
+		6891BA151C5A32AA008160AE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; };
+		6891BA161C5A32AF008160AE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; };
+		6891BA171C5A32AF008160AE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; };
+		6891BA181C5A32AF008160AE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; };
+		6891BA191C5A32AF008160AE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; };
+		6891BA1A1C5A32B4008160AE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; };
+		6891BA1B1C5A32B4008160AE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; };
+		6891BA1C1C5A32B4008160AE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62B1C59066C00C50B07 /* ReactiveCocoa.framework */; };
+		6891BA1D1C5A32B4008160AE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62C1C59066C00C50B07 /* Result.framework */; };
+		6891BA1E1C5A3383008160AE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF6291C59066C00C50B07 /* Nimble.framework */; };
+		6891BA1F1C5A3383008160AE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62A1C59066C00C50B07 /* Quick.framework */; };
+		6891BA201C5A3383008160AE /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689AF62D1C59066C00C50B07 /* Swinject.framework */; };
 		6891BA3D1C510ED800D5E464 /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6891BA3C1C510ED800D5E464 /* NewsAppTests.swift */; };
 		689E1DB51BF4EAE7009D5D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DB41BF4EAE7009D5D02 /* AppDelegate.swift */; };
 		689E1DB71BF4EAE7009D5D02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DB61BF4EAE7009D5D02 /* ViewController.swift */; };
@@ -205,6 +230,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6891BA081C5A30F9008160AE /* ObjectMapper.framework in Frameworks */,
+				6891BA091C5A30F9008160AE /* AlamofireObjectMapper.framework in Frameworks */,
+				6891BA0A1C5A30F9008160AE /* Alamofire.framework in Frameworks */,
+				6891BA0B1C5A3110008160AE /* ReactiveCocoa.framework in Frameworks */,
+				6891BA0C1C5A3110008160AE /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6821BC551C5132E500D8C42B /* NewsAppModel.framework in Frameworks */,
+				6891BA121C5A32AA008160AE /* Nimble.framework in Frameworks */,
+				6891BA131C5A32AA008160AE /* Quick.framework in Frameworks */,
+				6891BA141C5A32AA008160AE /* ReactiveCocoa.framework in Frameworks */,
+				6891BA151C5A32AA008160AE /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6821BC8C1C51340800D8C42B /* NewsAppModel.framework in Frameworks */,
+				6891BA0D1C5A3149008160AE /* ReactiveCocoa.framework in Frameworks */,
+				6891BA0E1C5A3149008160AE /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +266,10 @@
 			files = (
 				6821BC8D1C51348E00D8C42B /* NewsAppModel.framework in Frameworks */,
 				6821BC771C5133D700D8C42B /* NewsAppViewModel.framework in Frameworks */,
+				6891BA161C5A32AF008160AE /* Nimble.framework in Frameworks */,
+				6891BA171C5A32AF008160AE /* Quick.framework in Frameworks */,
+				6891BA181C5A32AF008160AE /* ReactiveCocoa.framework in Frameworks */,
+				6891BA191C5A32AF008160AE /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6821BCB71C51378100D8C42B /* NewsAppViewModel.framework in Frameworks */,
+				6891BA0F1C5A315F008160AE /* ReactiveCocoa.framework in Frameworks */,
+				6891BA101C5A315F008160AE /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +289,10 @@
 			files = (
 				6821BCBB1C5137E300D8C42B /* NewsAppViewModel.framework in Frameworks */,
 				6821BCA11C5136E700D8C42B /* NewsAppView.framework in Frameworks */,
+				6891BA1A1C5A32B4008160AE /* Nimble.framework in Frameworks */,
+				6891BA1B1C5A32B4008160AE /* Quick.framework in Frameworks */,
+				6891BA1C1C5A32B4008160AE /* ReactiveCocoa.framework in Frameworks */,
+				6891BA1D1C5A32B4008160AE /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +300,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6891BA1E1C5A3383008160AE /* Nimble.framework in Frameworks */,
+				6891BA1F1C5A3383008160AE /* Quick.framework in Frameworks */,
+				6891BA201C5A3383008160AE /* Swinject.framework in Frameworks */,
 				6821BCB81C5137B600D8C42B /* NewsAppModel.framework in Frameworks */,
 				6821BCB91C5137B600D8C42B /* NewsAppView.framework in Frameworks */,
 				6821BCBA1C5137B600D8C42B /* NewsAppViewModel.framework in Frameworks */,
@@ -271,6 +320,7 @@
 				685E2F881C3570AA006943AB /* WebImage.framework in Frameworks */,
 				6821BC821C5133D700D8C42B /* NewsAppViewModel.framework in Frameworks */,
 				6821BC601C5132E500D8C42B /* NewsAppModel.framework in Frameworks */,
+				6891BA111C5A319C008160AE /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,6 +974,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -945,6 +999,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -961,6 +1019,10 @@
 		6821BC641C5132E500D8C42B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppModelTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -972,6 +1034,10 @@
 		6821BC651C5132E500D8C42B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppModelTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -988,6 +1054,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppViewModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -1009,6 +1079,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppViewModel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -1025,6 +1099,10 @@
 		6821BC881C5133D700D8C42B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppViewModelTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1036,6 +1114,10 @@
 		6821BC891C5133D700D8C42B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppViewModelTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1052,6 +1134,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -1073,6 +1159,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -1089,6 +1179,10 @@
 		6821BCB21C5136E700D8C42B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1101,6 +1195,10 @@
 		6821BCB31C5136E700D8C42B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1114,6 +1212,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1127,6 +1229,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewsAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
