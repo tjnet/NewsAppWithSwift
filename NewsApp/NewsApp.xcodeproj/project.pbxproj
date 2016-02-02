@@ -96,7 +96,6 @@
 		68CFB6781C34D52B00E8B742 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB6761C34D52B00E8B742 /* TableViewController.xib */; };
 		68CFB67B1C34D98C00E8B742 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB6791C34D98C00E8B742 /* FeedTableViewCell.swift */; };
 		68CFB67C1C34D98C00E8B742 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB67A1C34D98C00E8B742 /* FeedTableViewCell.xib */; };
-		68CFB67E1C34DD4200E8B742 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB67D1C34DD4200E8B742 /* Article.swift */; };
 		68CFB6841C351D8900E8B742 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68CFB6871C351F5600E8B742 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB6861C351F5600E8B742 /* FeedResponse.swift */; };
 		68CFB6891C35206700E8B742 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CFB6881C35206700E8B742 /* ObjectMapper.framework */; };
@@ -310,7 +309,6 @@
 		68CFB6761C34D52B00E8B742 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		68CFB6791C34D98C00E8B742 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		68CFB67A1C34D98C00E8B742 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
-		68CFB67D1C34DD4200E8B742 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		68CFB6821C351D8900E8B742 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		68CFB6861C351F5600E8B742 /* FeedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		68CFB6881C35206700E8B742 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -572,7 +570,6 @@
 				689E1DBB1BF4EAE7009D5D02 /* Assets.xcassets */,
 				689E1DBD1BF4EAE7009D5D02 /* LaunchScreen.storyboard */,
 				689E1DC01BF4EAE7009D5D02 /* Info.plist */,
-				68CFB67D1C34DD4200E8B742 /* Article.swift */,
 				68CFB6751C34D52B00E8B742 /* TableViewController.swift */,
 				68CFB6761C34D52B00E8B742 /* TableViewController.xib */,
 				68CFB6791C34D98C00E8B742 /* FeedTableViewCell.swift */,
@@ -990,7 +987,6 @@
 				68CFB6871C351F5600E8B742 /* FeedResponse.swift in Sources */,
 				689E1DB51BF4EAE7009D5D02 /* AppDelegate.swift in Sources */,
 				6822A0A51C3577AC00E90869 /* OGPResponse.swift in Sources */,
-				68CFB67E1C34DD4200E8B742 /* Article.swift in Sources */,
 				68746E181C43537B001AAD76 /* TJExtensions.swift in Sources */,
 				68746E1B1C435DD1001AAD76 /* API.swift in Sources */,
 				689E1DC71BF4EB35009D5D02 /* CAPSPageMenu.swift in Sources */,
