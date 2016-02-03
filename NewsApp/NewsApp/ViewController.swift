@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
         for feed in feeds
         {
-            let feedController = TableViewController(nibName: "TableViewController", bundle: nil)
+            let feedController = TableViewController(viewModel: ArticleTableViewModel())
             feedController.fetchFrom = feed["link"]!
             feedController.title = feed["title"]
             controllerArray.append(feedController)

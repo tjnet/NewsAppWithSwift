@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import ReactiveCocoa
+
+class ArticleTableViewModel {
+    
+    
+}
