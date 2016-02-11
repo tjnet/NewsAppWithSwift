@@ -9,7 +9,7 @@
 import Foundation
 import ReactiveCocoa
 
-
+// An implementation of the GettingArticle protocol
 class GettingArticleImpl : NSObject, GettingArticle {
     
     func gettingArticleSignal() -> RACSignal {
