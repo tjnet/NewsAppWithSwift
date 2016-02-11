@@ -8,8 +8,17 @@
 
 import Foundation
 import ReactiveCocoa
+import Alamofire
+import RealmSwift
+import Realm
 
-class ArticleTableViewModel {
+// A ViewModel that exposes the results of a Fetching Articles
+class ArticleTableViewModel: NSObject {
     
+    var title : String = ""
+    var entries : Results<Entry>!
     
+    override init(){
+        super.init()
+    }
 }

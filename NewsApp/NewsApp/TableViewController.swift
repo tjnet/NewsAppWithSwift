@@ -38,6 +38,8 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bindViewModel()
+        
         self.tableView.registerNib(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
         
         Alamofire.request(.GET, fetchFrom).responseObject("responseData") { (response: Alamofire.Response<FeedResponse, NSError>) in
@@ -115,6 +117,10 @@ class TableViewController: UITableViewController {
         
     
         return cell
+    }
+    
+    private func bindViewModel() {
+        title = viewModel.title
     }
 
 
