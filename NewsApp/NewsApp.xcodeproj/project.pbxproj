@@ -94,6 +94,10 @@
 		68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; };
 		68A5D1501C6C9D6C009F0863 /* GettingArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5D14F1C6C9D6C009F0863 /* GettingArticle.swift */; };
 		68A5D1511C6C9D6C009F0863 /* GettingArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5D14F1C6C9D6C009F0863 /* GettingArticle.swift */; };
+		68A5D1531C6CA43A009F0863 /* ViewModelServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5D1521C6CA43A009F0863 /* ViewModelServices.swift */; };
+		68A5D1541C6CA43B009F0863 /* ViewModelServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5D1521C6CA43A009F0863 /* ViewModelServices.swift */; };
+		68A5D1561C6CA963009F0863 /* GettingArticleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5D1551C6CA963009F0863 /* GettingArticleImpl.swift */; };
+		68A5D1571C6CA963009F0863 /* GettingArticleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5D1551C6CA963009F0863 /* GettingArticleImpl.swift */; };
 		68C3EB331C362B8F0094B465 /* HTMLReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C3EB321C362B8F0094B465 /* HTMLReader.framework */; };
 		68CFB6771C34D52B00E8B742 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB6751C34D52B00E8B742 /* TableViewController.swift */; };
 		68CFB6781C34D52B00E8B742 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB6761C34D52B00E8B742 /* TableViewController.xib */; };
@@ -309,6 +313,8 @@
 		689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		68A515BA1C07413E00C10D86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		68A5D14F1C6C9D6C009F0863 /* GettingArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingArticle.swift; sourceTree = "<group>"; };
+		68A5D1521C6CA43A009F0863 /* ViewModelServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelServices.swift; sourceTree = "<group>"; };
+		68A5D1551C6CA963009F0863 /* GettingArticleImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingArticleImpl.swift; sourceTree = "<group>"; };
 		68C3EB321C362B8F0094B465 /* HTMLReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTMLReader.framework; path = Carthage/Build/iOS/HTMLReader.framework; sourceTree = "<group>"; };
 		68CFB6751C34D52B00E8B742 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		68CFB6761C34D52B00E8B742 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -432,6 +438,7 @@
 				6821BCBF1C5138A800D8C42B /* Info.plist */,
 				6821BCC01C5138A800D8C42B /* NewsAppModel.h */,
 				68A5D14F1C6C9D6C009F0863 /* GettingArticle.swift */,
+				68A5D1551C6CA963009F0863 /* GettingArticleImpl.swift */,
 			);
 			path = NewsAppModel;
 			sourceTree = "<group>";
@@ -451,6 +458,7 @@
 				6821BC8E1C51361800D8C42B /* NewsAppViewModel.h */,
 				6821BC901C51362F00D8C42B /* Info.plist */,
 				689D3C441C62614F006B2D40 /* ArticleTableViewModel.swift */,
+				68A5D1521C6CA43A009F0863 /* ViewModelServices.swift */,
 			);
 			path = NewsAppViewModel;
 			sourceTree = "<group>";
@@ -936,6 +944,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68A5D1501C6C9D6C009F0863 /* GettingArticle.swift in Sources */,
+				68A5D1561C6CA963009F0863 /* GettingArticleImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -951,6 +960,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A5D1531C6CA43A009F0863 /* ViewModelServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,8 +1000,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				68CFB68F1C3524A500E8B742 /* Entry.swift in Sources */,
+				68A5D1571C6CA963009F0863 /* GettingArticleImpl.swift in Sources */,
 				689E1DB71BF4EAE7009D5D02 /* ViewController.swift in Sources */,
 				68CFB68D1C35247800E8B742 /* Feed.swift in Sources */,
+				68A5D1541C6CA43B009F0863 /* ViewModelServices.swift in Sources */,
 				68CFB6871C351F5600E8B742 /* FeedResponse.swift in Sources */,
 				689E1DB51BF4EAE7009D5D02 /* AppDelegate.swift in Sources */,
 				6822A0A51C3577AC00E90869 /* OGPResponse.swift in Sources */,
@@ -1162,6 +1174,7 @@
 		6821BC851C5133D700D8C42B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1178,6 +1191,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.NewsAppViewModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1187,6 +1201,7 @@
 		6821BC861C5133D700D8C42B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
