@@ -120,7 +120,7 @@ class TableViewController: UITableViewController {
     }
     
     private func bindViewModel() {
-        title = viewModel.title
+        
     }
 
 

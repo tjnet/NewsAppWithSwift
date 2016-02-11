@@ -29,4 +29,9 @@ class ArticleTableViewModel: NSObject {
         super.init()
         
     }
+    
+    // MARK: Private methods
+    private func executeGetArticleSignal() -> RACSignal {
+        return services.gettingArticleService.gettingArticleSignal()
+    }
 }
