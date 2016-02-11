@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+// provides common services to view models
+protocol ViewModelServices {
+    
+    var gettingArticleService: GettingArticle { get }
+}

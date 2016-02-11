@@ -15,10 +15,18 @@ import Realm
 // A ViewModel that exposes the results of a Getting Articles
 class ArticleTableViewModel: NSObject {
     
+    //MARK: Properties
+    
+    private let services: ViewModelServices
+    
     var title : String = ""
     var entries : Results<Entry>!
     
-    override init(){
+    //MARK: Public API
+    
+    init(services: ViewModelServices){
+        self.services = services
         super.init()
+        
     }
 }
