@@ -12,7 +12,7 @@ import Alamofire
 import RealmSwift
 import Realm
 
-// A ViewModel that exposes the results of a Fetching Articles
+// A ViewModel that exposes the results of a Getting Articles
 class ArticleTableViewModel: NSObject {
     
     var title : String = ""

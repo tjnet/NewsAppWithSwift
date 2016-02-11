@@ -92,6 +92,8 @@
 		689E1DBF1BF4EAE7009D5D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689E1DBD1BF4EAE7009D5D02 /* LaunchScreen.storyboard */; };
 		689E1DC71BF4EB35009D5D02 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */; };
 		68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; };
+		68A5D1501C6C9D6C009F0863 /* GettingArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5D14F1C6C9D6C009F0863 /* GettingArticle.swift */; };
+		68A5D1511C6C9D6C009F0863 /* GettingArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5D14F1C6C9D6C009F0863 /* GettingArticle.swift */; };
 		68C3EB331C362B8F0094B465 /* HTMLReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C3EB321C362B8F0094B465 /* HTMLReader.framework */; };
 		68CFB6771C34D52B00E8B742 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CFB6751C34D52B00E8B742 /* TableViewController.swift */; };
 		68CFB6781C34D52B00E8B742 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CFB6761C34D52B00E8B742 /* TableViewController.xib */; };
@@ -306,6 +308,7 @@
 		689E1DC01BF4EAE7009D5D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		68A515BA1C07413E00C10D86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		68A5D14F1C6C9D6C009F0863 /* GettingArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingArticle.swift; sourceTree = "<group>"; };
 		68C3EB321C362B8F0094B465 /* HTMLReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTMLReader.framework; path = Carthage/Build/iOS/HTMLReader.framework; sourceTree = "<group>"; };
 		68CFB6751C34D52B00E8B742 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		68CFB6761C34D52B00E8B742 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -428,6 +431,7 @@
 			children = (
 				6821BCBF1C5138A800D8C42B /* Info.plist */,
 				6821BCC01C5138A800D8C42B /* NewsAppModel.h */,
+				68A5D14F1C6C9D6C009F0863 /* GettingArticle.swift */,
 			);
 			path = NewsAppModel;
 			sourceTree = "<group>";
@@ -931,6 +935,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A5D1501C6C9D6C009F0863 /* GettingArticle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -995,6 +1000,7 @@
 				689E1DC71BF4EB35009D5D02 /* CAPSPageMenu.swift in Sources */,
 				68CFB6771C34D52B00E8B742 /* TableViewController.swift in Sources */,
 				689D3C451C62614F006B2D40 /* ArticleTableViewModel.swift in Sources */,
+				68A5D1511C6C9D6C009F0863 /* GettingArticle.swift in Sources */,
 				68CFB68B1C3523DA00E8B742 /* ResponseData.swift in Sources */,
 				68CFB67B1C34D98C00E8B742 /* FeedTableViewCell.swift in Sources */,
 			);
@@ -1073,6 +1079,7 @@
 		6821BC621C5132E500D8C42B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1089,6 +1096,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.NewsAppModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1098,6 +1106,7 @@
 		6821BC631C5132E500D8C42B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1434,6 +1443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1450,6 +1460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
