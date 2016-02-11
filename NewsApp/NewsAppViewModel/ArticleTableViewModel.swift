@@ -21,6 +21,7 @@ class ArticleTableViewModel: NSObject {
     
     var title : String = ""
     var entries : Results<Entry>!
+    var fetchFrom : String = ""
     
     //MARK: Public API
     
@@ -32,6 +33,6 @@ class ArticleTableViewModel: NSObject {
     
     // MARK: Private methods
     private func executeGetArticleSignal() -> RACSignal {
-        return services.gettingArticleService.gettingArticleSignal()
+        return services.gettingArticleService.gettingArticleSignal(fetchFrom, title: title)
     }
 }

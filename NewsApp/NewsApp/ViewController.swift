@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         // Example:
 
         for feed in feeds
-        {
+        {   
             let viewModelServices = ViewModelServicesImpl(navigationController: UINavigationController())
             let viewModel = ArticleTableViewModel(services: viewModelServices)
             let feedController = TableViewController(viewModel: viewModel)

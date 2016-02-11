@@ -14,6 +14,6 @@ import ReactiveCocoa
 protocol GettingArticle {
     
     // getting articles, returning a signal that emits the response
-    func gettingArticleSignal() -> RACSignal
+    func gettingArticleSignal(fechFrom: String, title: String) -> RACSignal
     
 }
