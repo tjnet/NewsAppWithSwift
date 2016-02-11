@@ -32,7 +32,7 @@ class ArticleTableViewModel: NSObject {
     }
     
     // MARK: Private methods
-    private func executeGetArticleSignal() -> RACSignal {
+    private func executeGetArticleSignal() -> SignalProducer<AnyObject, NetworkError> {
         return services.gettingArticleService.gettingArticleSignal(fetchFrom, title: title)
     }
 }

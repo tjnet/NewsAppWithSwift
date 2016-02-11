@@ -12,16 +12,25 @@ import Alamofire
 import AlamofireObjectMapper
 import RealmSwift
 import Realm
+import Result
 
 // An implementation of the GettingArticle protocol
 class GettingArticleImpl : NSObject, GettingArticle {
     
+    private let network: Networking
+    
+    public init(network: Networking){
+        self.network = network
+    }
+
     // MARK: Public API
     
-    func gettingArticleSignal(fetchFrom: String, title: String) -> RACSignal {
+    func gettingArticleSignal(fetchFrom: String, title: String) -> SignalProducer<AnyObject, NetworkError> {
         
-        // request 
-        return RACSignal.empty().logAll()
+        // request
+        return network.requestJSON(fetchFrom, parameters: nil)
+    
+
     }
 
 }

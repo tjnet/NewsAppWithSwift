@@ -16,7 +16,7 @@ class ViewModelServicesImpl: ViewModelServices {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.gettingArticleService = GettingArticleImpl()
+        self.gettingArticleService = GettingArticleImpl(network: Network())
     }
     
 }
