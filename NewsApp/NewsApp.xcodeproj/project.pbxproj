@@ -93,6 +93,10 @@
 		689E1DC71BF4EB35009D5D02 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */; };
 		68A0EEA21C7827A40013DD40 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0EEA11C7827A40013DD40 /* ArticleTableViewCell.swift */; };
 		68A0EEA31C7827A50013DD40 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0EEA11C7827A40013DD40 /* ArticleTableViewCell.swift */; };
+		68A0EEA51C782E930013DD40 /* ArticleTableViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0EEA41C782E930013DD40 /* ArticleTableViewModeling.swift */; };
+		68A0EEA61C782E930013DD40 /* ArticleTableViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0EEA41C782E930013DD40 /* ArticleTableViewModeling.swift */; };
+		68A0EEA81C782F380013DD40 /* ArticleTableViewCellModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0EEA71C782F380013DD40 /* ArticleTableViewCellModeling.swift */; };
+		68A0EEA91C782F380013DD40 /* ArticleTableViewCellModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0EEA71C782F380013DD40 /* ArticleTableViewCellModeling.swift */; };
 		68A515BC1C07413E00C10D86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A515BA1C07413E00C10D86 /* Alamofire.framework */; };
 		68A5B09A1C6CC71F0013E398 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5B0991C6CC71F0013E398 /* NetworkError.swift */; };
 		68A5B09B1C6CC71F0013E398 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5B0991C6CC71F0013E398 /* NetworkError.swift */; };
@@ -319,6 +323,8 @@
 		689E1DC01BF4EAE7009D5D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689E1DC61BF4EB35009D5D02 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		68A0EEA11C7827A40013DD40 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		68A0EEA41C782E930013DD40 /* ArticleTableViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewModeling.swift; sourceTree = "<group>"; };
+		68A0EEA71C782F380013DD40 /* ArticleTableViewCellModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCellModeling.swift; sourceTree = "<group>"; };
 		68A515BA1C07413E00C10D86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		68A5B0991C6CC71F0013E398 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = NewsAppModel/NetworkError.swift; sourceTree = SOURCE_ROOT; };
 		68A5B09D1C6CC79F0013E398 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -477,6 +483,8 @@
 				689D3C441C62614F006B2D40 /* ArticleTableViewModel.swift */,
 				68A5D1521C6CA43A009F0863 /* ViewModelServices.swift */,
 				68A5D15A1C6CB42E009F0863 /* ViewModelServicesImpl.swift */,
+				68A0EEA41C782E930013DD40 /* ArticleTableViewModeling.swift */,
+				68A0EEA71C782F380013DD40 /* ArticleTableViewCellModeling.swift */,
 			);
 			path = NewsAppViewModel;
 			sourceTree = "<group>";
@@ -981,6 +989,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A0EEA51C782E930013DD40 /* ArticleTableViewModeling.swift in Sources */,
+				68A0EEA81C782F380013DD40 /* ArticleTableViewCellModeling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,12 +1035,14 @@
 				689E1DB71BF4EAE7009D5D02 /* ViewController.swift in Sources */,
 				68CFB68D1C35247800E8B742 /* Feed.swift in Sources */,
 				68A5D15B1C6CB42E009F0863 /* ViewModelServicesImpl.swift in Sources */,
+				68A0EEA91C782F380013DD40 /* ArticleTableViewCellModeling.swift in Sources */,
 				68A5B09F1C6CC79F0013E398 /* Network.swift in Sources */,
 				68A5B0A21C6CC7DD0013E398 /* Networking.swift in Sources */,
 				68A5D1541C6CA43B009F0863 /* ViewModelServices.swift in Sources */,
 				68CFB6871C351F5600E8B742 /* FeedResponse.swift in Sources */,
 				689E1DB51BF4EAE7009D5D02 /* AppDelegate.swift in Sources */,
 				68A5B09B1C6CC71F0013E398 /* NetworkError.swift in Sources */,
+				68A0EEA61C782E930013DD40 /* ArticleTableViewModeling.swift in Sources */,
 				6822A0A51C3577AC00E90869 /* OGPResponse.swift in Sources */,
 				68746E181C43537B001AAD76 /* TJExtensions.swift in Sources */,
 				68746E1B1C435DD1001AAD76 /* API.swift in Sources */,
